@@ -1,8 +1,8 @@
-import React from "react";
+import './directory.styles.scss'
 import  CategoryItem from'../category-Item/category-item.component';
 
 
-const Directory = (categories) => {
+const Directory = ({categories}) => {
   return (
     <div className="categories-container">
       {categories.map((category) => (
