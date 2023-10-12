@@ -1,6 +1,6 @@
 import "./category-item.styles.scss";
 
-const categoryItem = ({ category }) => {
+const CategoryItem = ({ category }) => {
   const { imageUrl, title } = category;
   return (
     <div className="category-container">
@@ -10,8 +10,6 @@ const categoryItem = ({ category }) => {
           backgroundImage: `url(${imageUrl})`,
         }}
       />
-      {/* img */}
-      {/* Change later on to match figma */}
       <div className="category-body-container">
         <h2>{title}</h2>
         <p>Shop Now</p>
@@ -20,4 +18,4 @@ const categoryItem = ({ category }) => {
   );
 };
 
-export default categoryItem;
+export default CategoryItem;
