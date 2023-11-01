@@ -1,18 +1,16 @@
-import "./category-item.styles.scss";
+import './category-item.styles.scss';
 
-const categoryItem = ({ category }) => {
+const CategoryItem = ({ category }) => {
   const { imageUrl, title } = category;
   return (
-    <div className="category-container">
+    <div className='category-container'>
       <div
-        className="background-image"
+        className='background-image'
         style={{
           backgroundImage: `url(${imageUrl})`,
         }}
       />
-      {/* img */}
-      {/* Change later on to match figma */}
-      <div className="category-body-container">
+      <div className='category-body-container'>
         <h2>{title}</h2>
         <p>Shop now, swith us</p>
       </div>
@@ -20,4 +18,4 @@ const categoryItem = ({ category }) => {
   );
 };
 
-export default categoryItem;
+export default CategoryItem;
