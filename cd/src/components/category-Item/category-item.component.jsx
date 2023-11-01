@@ -14,7 +14,7 @@ const categoryItem = ({ category }) => {
       {/* Change later on to match figma */}
       <div className="category-body-container">
         <h2>{title}</h2>
-        <p>Shop Now</p>
+        <p>Shop now, swith us</p>
       </div>
     </div>
   );
